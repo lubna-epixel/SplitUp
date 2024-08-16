@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* div{
+    border: 2px solid crimson;
+} */
+body{
+    background-image: url("{% static 'images/bg.jpg' %}");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.row{
+    background: transparent;
+    border-radius: 3px;
+}
+
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.login{
+    color: whitesmoke;
+}
+
+.reg-a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.btn-info{
+    border: 0;
+    border-radius: 4px;
+    height: 50px;
+    outline: none;
+    width: 100%;
+    background-color: rgb(122, 114, 114);
+    color: white;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+
+.form-control{
+    border: 2px;
+    border-bottom: 2px solid white;
+    background: rgba(156, 130, 130, 0.2);
+    font-size:13px;
+    color: whitesmoke;
+    margin-top: 20px
+}
+/* .btn-login:hover{
+    background:transparent;
+    color:white;
+} */
+::placeholder{
+    color: whitesmoke;
+}

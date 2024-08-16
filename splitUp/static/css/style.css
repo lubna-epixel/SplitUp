@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* div{
+    border: 2px solid crimson;
+} */
+body{
+    background-image: url('/static/image/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.reg-a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(247, 242, 242);
+    margin-top: 20px;
+    margin:30px;
+}
+
+.label{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: normal;
+    color: rgb(247, 242, 242);
+}
+
+.form-control{
+    border: 2px;
+    /* border-radius: 0px; */
+    border-bottom: 2px solid white;
+    background: rgba(165, 139, 139, 0.2);
+    font-size:13px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+small{
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.btn-info{
+    margin-left: 90px;
+    width: 100px;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(122, 114, 114);
+
+}
+
+.btn-cancel{
+    margin-left: 33px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px; 
+    background-color: rgb(122, 114, 114);
+
+}

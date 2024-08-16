@@ -1,0 +1,36 @@
+version: '3.10'
+
+services:
+  splitUp-django:
+    container_name: splitUp-django
+    image: django-task-image
+    build: 
+      context: ./splitUp
+    command: python manage.py runserver 0.0.0.0:8000
+    restart: always
+    volumes: 
+      - ./splitUp:/code
+    ports:
+      - 8005:8000
+    depends_on:
+      - splitUp-db
+  splitUp-db:
+    container_name: splitUp-db
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=splitUp
+    ports:
+      - "5433:5432"  
+  splitUp-adminer:
+      container_name: splitUp-adminer
+      image: adminer
+      restart: always
+      ports:
+        - 8081:8080
+
+volumes:
+  postgres_data:
